@@ -3,12 +3,9 @@ import useLetras from "../hooks/useLetras";
 
 const Formulario = () => {
 
-    const {setAlerta, busquedaLetra} = useLetras();
+    const {setAlerta, busquedaLetra, busqueda, setBusqueda} = useLetras();
 
-    const [busqueda, setBusqueda] = useState({
-        artista: '',
-        cancion: ''
-    });
+    
 
     const handleSubmit = e => {
         e.preventDefault();

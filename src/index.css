@@ -92,3 +92,10 @@ form input[type="submit"]:hover {
 .letra {
   white-space: pre-wrap;
 }
+
+span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #7c3aed;
+}

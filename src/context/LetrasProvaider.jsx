@@ -23,6 +23,13 @@ const LetrasProvaider = ({children}) => {
         setCargando(false);
     }
 
+    //
+    const [busqueda, setBusqueda] = useState({
+        artista: '',
+        cancion: ''
+    });
+    //
+
     return(
         <LetrasContext.Provider
             value={{
@@ -30,7 +37,9 @@ const LetrasProvaider = ({children}) => {
                 setAlerta,
                 busquedaLetra,
                 letra,
-                cargando
+                cargando,
+                busqueda,
+                setBusqueda
             }}
         >
             {children}
